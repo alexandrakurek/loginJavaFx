@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<BorderPane>
+
+    <top>
+        <HBox>
+            <Button>new</Button>
+            <Button>delete</Button>
+
+            <!-- region sluzy do wypelniania obszaru pomiedzy elementami-->
+            <Region prefHeight="10.0" prefWidth="200.0" HBox.hgrow="ALWAYS"/>
+
+            <TextField alignment="CENTER_RIGHT"/>
+            <Button alignment="CENTER_RIGHT">Seach</Button>
+
+        </HBox>
+    </top>
+
+    <left>
+        <TreeView prefHeight="400">
+            <root>
+                <TreeItem value="asdasdasdasdadsasdas">
+                    <children>
+                        <TreeItem value="CHILD1"/>
+                        <TreeItem value="CHILD2"/>
+                        <TreeItem value="CHILD3">
+                            <children>
+                                <TreeItem value="CHILD CHILD CHILD"/>
+                            </children>
+                        </TreeItem>
+                        <TreeItem value="CHILD4"/>
+                        <TreeItem value="CHILD5"/>
+                    </children>
+                </TreeItem>
+
+            </root>
+        </TreeView>
+    </left>
+
+    <center>
+        <ScrollPane vbarPolicy="AS_NEEDED">
+            <VBox>
+                <Label>asdasdasda</Label>
+                <Label>asdasdasda</Label>
+                <Label>asdasdasda</Label>
+                <Label>asdasdasda</Label>
+                <Label>asdasdasda</Label>
+                <Label>asdasdasda</Label>
+                <Label>asdasdasda</Label>
+                <Label>asdasdasda</Label>
+                <Label>asdasdasda</Label>
+                <Label>asdasdasda</Label>
+                <Label>asdasdasda</Label>
+                <Label>asdasdasda</Label>
+                <Label>asdasdasda</Label>
+                <Label>asdasdasda</Label>
+                <Label>asdasdasda</Label>
+                <Label>asdasdasda</Label>
+                <Label>asdasdasda</Label>
+                <Label>asdasdasda</Label>
+                <Label>asdasdasda</Label>
+                <Label>asdasdasda</Label>
+                <Label>asdasdasda</Label>
+                <Label>asdasdasda</Label>
+                <Label>asdasdasda</Label>
+                <Label>asdasdasda</Label>
+                <Label>asdasdasda</Label>
+                <Label>asdasdasda</Label>
+                <Label>asdasdasda</Label>
+                <Label>asdasdasda</Label>
+                <Label>asdasdasda</Label>
+                <Label>asdasdasda</Label>
+            </VBox>
+            <!--<Label BorderPane.alignment="TOP_LEFT" style="-fx-wrap-text: true;">-->
+            <!--<text>-->
+            <!--ascascascascascascascasca-->
+            <!--</text>-->
+            <!--<font>-->
+            <!--<Font name="Arial" size="25"/>-->
+            <!--</font>-->
+            <!--</Label>-->
+        </ScrollPane>
+
+    </center>
+
+
+    <bottom>
+        <!--css borders w necie- wyszukanie stylow-->
+        <Label BorderPane.alignment="BOTTOM_RIGHT"
+               style="-fx-border-color: black;
+              -fx-border-style: dashed;
+              -fx-border-width: 5 10 5 10">
+            author: Aleksandra
+
+        </Label>
+    </bottom>
+</BorderPane>
